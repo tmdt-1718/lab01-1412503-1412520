@@ -5,60 +5,67 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'libs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  	<!-- start header -->
-	<div class="header_bg">
-	<div class="wrap">
-	<div class="wrapper">
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/> </a>
-			</div>
-			<div class="cssmenu">
-				<ul>
-				  	<li ><a class="home" href="index.html"></a></li>
-				  	<li><a href="">Albums</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Blog</a></li>
-					<div class="clear"></div>
-				 </ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	</div>
-	</div>
-	<!-- start main -->
+   <!-- start header -->
+ <div class="header_bg">
+ <div class="wrap">
+ <div class="wrapper">
+  <nav class="header navbar">
+   <div class="logo navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>                        
+       </button>
+    <a href="index.html"><img src="images/logo.png" alt=""/> </a>
+   </div>
+   <div class="collapse navbar-collapse cssmenu" id="myNavbar">
+    <ul class="nav navbar-nav">
+       <li ><a class="home" href="index.html"></a></li>
+       <li><a href="">Albums</a></li>
+     <li><a href="">About</a></li>
+     <li><a href="">Blog</a></li>
+     <div class="clear"></div>
+     </ul>
+   </div>
+   <div class="clear"></div>
+  </nav>
+ </div>
+ </div>
+ </div>
+ <!-- start main -->
     <%= yield %>
     <!-- start footer -->
-	<div class="wrap">
-		<div class="footer">
-			<div class="foot_nav">	
-					 <ul>
-					    <li><a href="index.html">home</a></li>
-					    <li><a href="about.html">about</a></li>
-					    <li><a href="blog.html">Blog</a></li>
-					    <li><a href="contact.html">Contact</a></li>
-					    <div class="clear"></div>
-					 </ul>
-			</div>
-			<div class="foot_soc">
-					<ul>
-						<li><a class="icon1" href="#"></a></li>
-						<li><a  class="icon2" href="#"></a></li>
-						<li><a  class="icon3" href="#"></a></li>
-						<li><a  class="icon4" href="#"></a></li>
-						<div class="clear"></div>
-					</ul>
-			</div>
-			<div class="copy">	
-				<p class="w3-link"> © Copyright 2013 Designer First.Com. Template by&nbsp; <a href="http://w3layouts.com/"> W3Layouts</a></p>
-			</div>
-			<div class="clear"></div>
-	</div>
+ <div class="wrap">
+  <div class="footer">
+   <div class="foot_nav"> 
+      <ul>
+         <li><a href="index.html">home</a></li>
+         <li><a href="about.html">about</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <div class="clear"></div>
+      </ul>
+   </div>
+   <div class="foot_soc">
+     <ul>
+      <li><a class="icon1" href="#"></a></li>
+      <li><a  class="icon2" href="#"></a></li>
+      <li><a  class="icon3" href="#"></a></li>
+      
+      <li><a  class="icon4" href="#"></a></li>
+      <div class="clear"></div>
+     </ul>
+   </div>
+   <div class="copy"> 
+    <p class="w3-link"> © Copyright 2013 Designer First.Com. Template by&nbsp; <a href="http://w3layouts.com/"> W3Layouts</a></p>
+   </div>
+   <div class="clear"></div>
+ </div>
 </div>
   </body>
 </html>

@@ -9,4 +9,52 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 20171007185031) do
+
   # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
+    t.text "title"
+    t.text "acontent"
+    t.integer "viewNumber"
+    t.integer "creator"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "blogs", force: :cascade do |t|
+    t.text "bcontent"
+    t.text "blogPic"
+    t.integer "writer"
+    t.integer "viewNumber"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "userID"
+    t.integer "blogID"
+    t.text "cmt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.integer "viewNumber"
+    t.integer "uploader"
+    t.integer "albumID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.text "email"
+    t.text "pass"
+    t.text "tell"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+end

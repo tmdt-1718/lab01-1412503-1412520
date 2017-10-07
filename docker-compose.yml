@@ -4,7 +4,8 @@ services:
     image: postgres
     container_name: db
     env_file: .env
-
+    ports:
+      - "5433:5432"
   web:
     build: .
     command: bundle exec "rm -f tmp/pids/server.pid && rails s -b 0.0.0.0"
