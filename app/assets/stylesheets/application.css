@@ -152,7 +152,7 @@ h2.style a{
  font-family: 'nexa_boldregular';
  display:block;
  text-align: center;
- font-size: 3.2em;
+ font-size: 2em;
  color: #111111;
  text-transform: capitalize;
  letter-spacing: -1px;
@@ -200,7 +200,7 @@ p.para{
  transition: all 0.3s ease-out;
 }
 .btn:before{
- content:url('../images/btn.png');
+ content:url('/btn.png');
  float:left;
 }
 .btn:hover{
@@ -757,7 +757,7 @@ form{
   width: 100%;
  }
  h2.style a {
-  font-size: 2.2em;
+  font-size: 1.6em;
  }
  .cssmenu > ul > li > a {
   padding: 10px 10px;
@@ -844,4 +844,8 @@ form{
  .article ul li a {
   margin-left: 30px;
  }
+}
+
+.fixed {
+  position: fixed !important;
 }
