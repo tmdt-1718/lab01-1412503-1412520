@@ -1,0 +1,14 @@
+<title>Albums</title>
+
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/animate/animate.css" />
+<link rel="stylesheet" href="assets/animate/set.css" />
+<link rel="stylesheet" href="assets/style.css">
+
+<div id="works"  class=" clearfix grid"> 
+  <% @pictures.each do |picture| %>
+      <figure class="  wowload fadeInUp">
+        <a href="images/picture/<%=picture.id %>.jpg"><img src="images/picture/<%=picture.id %>.jpg" alt="img01"/></a>
+      </figure>     
+  <% end %>      
+</div>
