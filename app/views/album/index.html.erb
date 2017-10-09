@@ -1,0 +1,42 @@
+<title>Albums</title>
+
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/animate/animate.css" />
+<link rel="stylesheet" href="assets/animate/set.css" />
+<link rel="stylesheet" href="assets/style.css">
+
+<div id="home">
+<!-- Slider Starts -->
+<div class="banner">
+          <img src="images/back.jpg" alt="banner" class="img-responsive">
+          <div class="caption">
+            <div class="caption-wrapper">
+              <div class="caption-info">              
+              <img src="images/profile.jpg" class="img-circle profile">
+              
+        <h1 class="animated bounceInUp">Albums</h1>
+              <p class="animated bounceInLeft">A picture is worth a thousand words</p>        
+             <div class="animated bounceInDown"><a href="#works" class="btn btn-default explore">View Albums</a></div>
+              </div>
+            </div>
+          </div>
+</div>
+<!-- #Slider Ends -->
+</div>
+
+<!-- works -->
+<div id="works"  class=" clearfix grid"> 
+  <% @albums.each do |album| %>
+      <figure class="effect-oscar  wowload fadeInUp">
+        <img src="images/picture/<%=album.pic %>.jpg" alt="img01"/>
+        <figcaption>
+            <h2><%=album.title %></h2>
+            <p>Content: <%=album.acontent %><br>
+            <p><a href="album_detail">View</a></p>
+            <p style="text-align: right"> <%=album.viewNumber %> Viewers</p>
+            <p style="text-align: right"> <%=album.email %></p>
+        </figcaption>
+      </figure>     
+  <% end %>
+      
+</div>
