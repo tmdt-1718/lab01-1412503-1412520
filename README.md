@@ -6,7 +6,7 @@ Thành viên:
 * [x] 1412503 Nguyễn Thị Thanh Thảo (1412503)
 * [x] 1412520 Nguyễn Hoàng Thi (1412520)
 
-URL: **URL hosting của bài tập**
+URL: https://protected-woodland-10335.herokuapp.com/
 
 ## Yêu cầu
 
