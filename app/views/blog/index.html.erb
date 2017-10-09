@@ -7,16 +7,18 @@
         <div class="list_img">
           <img src="<%= blog.blogPic%>" style="border-radius: 50%" alt="" align=""/>  
         </div>    
-        <p class="para"><%= blog.bcontent%></p>
+        <p class="para box"><%= blog.bcontent%></p>
         <a href="blog.html" class="btn">Read More</a>
-                <p style="float:right; margin-top: 1.5%; font-weight: bold"><i class="fa fa-eye" aria-hidden="true"> <%= blog.viewNumber%></i></p>
-        <p style="float:right; margin-top: 1.5%; font-weight: bold">Người đăng:   </p>
+        <p style="float:right; margin-top: 1.5%; font-weight: bold"><i class="fa fa-eye" aria-hidden="true"> <%= blog.viewNumber%></i></p>
+        <p style="float:right; margin-top: 1.5%; font-weight: bold; padding-right: 5px">Người đăng: <%= blog.writerName%>  </p>
 
       </div>
     <% end %>
 
-    
-
+<!--     <% @blogs.each do |blog| %>
+      <p><%= blog.writer%></p>
+    <% end %>  
+ -->
   </div>
 </div>
 </div>

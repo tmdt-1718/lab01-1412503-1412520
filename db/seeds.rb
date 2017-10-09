@@ -9,3 +9,22 @@ Blog.create!(bcontent: 'Việc thất tình giống như thói quen đi ngủ mu
 Blog.create!(bcontent: 'Càng sống nhiều ta càng thấy cái chết dễ dàng đến với bất cứ một ai. Chết quá dễ mà sống thì quá khó. Hôm qua gặp nhau đấy, ngày mai lại mất nhau. Sống thì có hẹn hò hôm nay hôm mai. Chết thì chẳng bao giờ có một cuộc hẹn hò nào trước. Một buổi sáng cách đây bốn năm, lúc tôi đang ngồi uống rượu với bạn, mẹ tôi bảo: “Mạ đi chơi chút nghe”. Thế rồi một giờ sau tôi được điện thoại báo tin mẹ tôi đã mất tại nhà người bạn. Càng yêu ta càng thấy: có tình yêu thì khó mà mất tình thì quá dễ. Hôm qua mới yêu nhau đấy, hôm nay đã mất rồi. Mất sạch như người đi buôn mất hết vốn liếng. Cứ tự an ủi mình khi nghĩ rằng mình đau khổ thì có một kẻ khác đang hạnh phúc. Và biết đâu cái thời gian mình được yêu thì một người khác cũng đang đau khổ vô cùng. Nghĩ thế thì thấy cuộc đời bỗng nhẹ nhàng hơn và cũng dễ tha thứ cho nhau. Sống mà giữ mãi trong lòng những hờn oán thì cũng nặng nề. Có người bỏ cuộc đời mà đi như một giấc ngủ quên. Có người bỏ cuộc tình mà đi như người đãng trí. Dù sao cũng đã lãng quên một nơi này để đi về một chốn khác. Phụ đời và phụ người hình như cũng vậy mà thôi. Người ở lại bao giờ cũng nhớ thương một hình bóng mình đã mất. Khó mà quên nhanh, khó mà xóa đi trong lòng một nỗi ngậm ngùi. Tưởng rằng có thể quên dễ dàng một cuộc tình nhưng hóa ra chẳng bao giờ quên được. Mượn cuộc tình này để xóa cuộc tình kia chỉ là một sự vá víu cho tâm hồn. Những mảnh vá ấy chỉ đủ để làm phẳng lặng bên ngoài mà thôi. Mỗi một con người vì ngại chết mà muốn sống. Mỗi một con người vì sợ mất tình mà giữ mãi một lòng nhớ nhung. Cuối cùng thì lòng yêu thương cuộc sống cũng không giữ lại đời người. Cuối cùng thì tình yêu không giữ được người mình yêu…', blogPic: '/blog_avatar/2.jpg', writer: 2, viewNumber: 2)
 Blog.create!(bcontent: 'Đôi lúc những lời hỏi thăm vào những giai đoạn mệt mỏi, nhạy cảm lại khiến người mình thương không thoải mái, tức giận. Đã không giúp được cô ấy thư giãn còn làm chuyện tệ hơn các cậu à... Cô gái ấy mạnh mẽ nhưng bên trong có yếu đuối, tuổi thơ có ít sự thương yêu hơn những đứa trẻ khác ~cryinnight~. Càng làm tôi thấy muốn được chở che cho cô ấy hơn, khiến động lực sống càng mạnh mãnh hơn. Nam nhi đầu đội trời chân đạm đất vậy không sợ gì vậy mà lắm lúc mềm nhũn khi đứng trước người mình thương', blogPic: '/blog_avatar/3.jpg', writer: 3, viewNumber: 3)
 Blog.create!(bcontent: 'Trời ơi thật mệt mỏi', blogPic: '/blog_avatar/4.jpg', writer: 1, viewNumber: 4)
+
+User.create!(email:'thanh@gmail.com', pass:'123', tell:'456')
+User.create!(email:'phuong@gmail.com', pass:'123', tell:'456')
+User.create!(email:'thanh@gmail.com', pass:'123', tell:'456')
+
+Album.create!(title:'Thiên nhiên', acontent:'Thiên vô tận ơi là vô tận :v', viewNumber: 3, creator: 2)
+Album.create!(title:'Động vật', acontent:'Thế giới động vật bao la', viewNumber: 3, creator: 1)
+Album.create!(title:'Mùa xuân', acontent:'Xuân về bao hóa lá', viewNumber: 3, creator: 2)
+Album.create!(title:'Nắng', acontent:'Nắng quá thôi bỏ đi', viewNumber: 3, creator: 1)
+Album.create!(title:'Mưa', acontent:'Mưa lạnh, mưa buồn mưa nhớ ai', viewNumber: 3, creator: 2)
+Album.create!(title:'Mùa hè', acontent:'Hè về nóng bức phượng nở, học sinh nghỉ hè', viewNumber: 3, creator: 2)
+
+
+Picture.create!(viewNumber:0, uploader:1, albumID:1)
+Picture.create!(viewNumber:0, uploader:2, albumID:2)
+Picture.create!(viewNumber:0, uploader:2, albumID:3)
+Picture.create!(viewNumber:0, uploader:1, albumID:4)
+Picture.create!(viewNumber:0, uploader:2, albumID:5)
+Picture.create!(viewNumber:0, uploader:1, albumID:6)
